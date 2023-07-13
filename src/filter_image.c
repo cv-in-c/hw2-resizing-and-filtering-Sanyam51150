@@ -61,7 +61,7 @@ image convolve_image(image im, image filter, int preserve)
             }
         }
     } else {
-        for (int c = 0; c < im.c; c++) {
+        for (int c = 0; c< im.c; c++) {
             for (int y = 0; y < height; y++) {
                 for (int x = 0; x < width; x++) {
                     set_pixel(padded, x, y, c, get_pixel(im, x - padding, y - padding, c));
